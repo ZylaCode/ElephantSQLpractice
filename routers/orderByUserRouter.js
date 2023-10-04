@@ -1,9 +1,7 @@
 import express from 'express';
+import pool from './pool.js';
 const orderByUserRouter = express.Router();
-import pg from 'pg';
-const {Pool} = pg;
 
-const pool = new Pool();
 
 //Create a user route that will return all the orders of a user
 

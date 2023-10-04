@@ -1,10 +1,7 @@
 import express from 'express';
 const orderRouter = express.Router();
+import pool from './pool.js';
 
-import pg from 'pg';
-const {Pool} = pg;
-
-const pool = new Pool();
 
 // GET  /  : To get all the orders 
 orderRouter.get("/", async (req, res) => {
